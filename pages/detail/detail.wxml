@@ -1,0 +1,7 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view>{{obj.address}}</view>
+  <image src="../../resources/{{obj.type}}.png" />
+  <view><view>详细信息</view>{{obj.detail}}</view>
+  <view>联系方式：{{obj.tel}}</view>
+</view>

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" show-location markers="{{markers}}" bindmarkertap="markertap"></map>
+</view>
+<view class="navs">
+  <view bindtap='handlepublish'>发布</view>
+  <view bindtap="handlesearch">搜索</view>
+</view>

@@ -1,0 +1,44 @@
+<block wx:if="{{!flag}}">
+      <view class="container">
+      <view class="info" bindtap='getAddress'>
+        <label>我的地址</label>
+        <view>{{address}}</view>
+      </view>
+      <view class="info">
+        <label>类型</label>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+              <radio value="buy"/>求购
+            </label>
+            <label class="radio">
+              <radio value="sell"/>转让
+            </label>
+        </radio-group>
+      </view>
+    <view class="info">
+      <label>说明</label>
+      <input type="text" placeholder='请填写您的具体需求' bindinput="detailChange" />
+    </view>
+    <view class="info">
+      <label>联系方式</label>
+      <input type="text" placeholder='请填写您的具体需求' bindinput="telChange" />
+    </view>
+    <button bindtap="pushInfo" type="primary">发布信息</button>
+</view>
+</block>
+
+
+
+<block wx:if="{{flag}}">
+  <view class="container1">
+    <view class="content">
+      <icon type="success"></icon>
+      <view>发布成功</view>
+    </view>
+    <view bindtap='backHome'>返回首页</view>
+  </view>
+</block>
+
+
+
+   

@@ -1,0 +1,10 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+  <input type="text" class="text" placeholder='搜索' bindinput='getSearchData'/><button type="primary">搜索</button>
+</view>
+<view class="list_content">
+  <view class="list" wx:for="{{list}}" wx:key="*this">
+    <view>{{item.address}}</view>
+    <view>{{item.detail}}</view>
+  </view>
+</view>

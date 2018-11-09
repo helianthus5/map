@@ -1,0 +1,22 @@
+/* pages/public/public.wxss */
+.info{
+  display:flex;
+  height:100rpx;
+  border-bottom:1rpx solid #ccc;
+  line-height:100rpx;
+}
+.info > label{
+  text-indent: 20rpx;
+  width:200rpx;
+  margin-right:20rpx;
+}
+.info input{
+  height:100rpx;
+}
+.content{
+  display: flex;
+  padding-left:30rpx;
+}
+.container1{
+  text-align:center;
+}
